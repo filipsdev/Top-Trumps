@@ -121,15 +121,31 @@ public class Deck {
 			}	
 		}
 		
-		public void clearActiveCards() {
+		public int clearActiveCards() {
 			int i = 0;
+			int humanNoCardsLeft = 0;
 			for(Player p : players) {
 				players.get(i).getHand().remove(0);
 				i++;
 			}
+			if(this.players.get(0).getHand().isEmpty()) {
+				humanNoCardsLeft = 1;
+			}
+			removePlayersWithNoCards();
+			return humanNoCardsLeft;
 		}
 		
 		
+private void removePlayersWithNoCards() {
+	ArrayList<Player> tempList = new ArrayList<Player>();
+	for(int i=0; i<this.players.size(); i++) {
+		if(!this.players.get(i).getHand().isEmpty()) {
+			tempList.add(this.players.get(i));
+		}
+		}
+	this.players = tempList; 
+}
+
 ///////////////////////LOGS////////////////////////////////////////
 		
 		
