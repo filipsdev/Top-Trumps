@@ -57,8 +57,13 @@ public class Card {
 	}
 	
 	public String log() {
+<<<<<<< HEAD
 		return cardName + " " + size + " " + speed + " " +  range 
 				+ " " + firepower + " " + cargo;
+=======
+		return cardName + " " + size + " " + speed + " "
+				+ range + " " + firepower + " " + cargo;
+>>>>>>> 9eb3d6af6f782f68521124b4a7d3bbfbcaec66ed
 	}
 	
 	public String toString(int cat) {
@@ -71,7 +76,7 @@ public class Card {
 		line = line + "\n\t> Firepower: " + firepower;
 		if(cat == 4) line = line + " <----";
 		line = line +  "\n\t> Cargo: " + cargo;
-		if(cat == 5) line = line + "<----";
+		if(cat == 5) line = line + " <----";
 		return line;
 	}
 }
