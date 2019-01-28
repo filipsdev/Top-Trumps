@@ -57,8 +57,8 @@ public class Card {
 	}
 	
 	public String log() {
-		return cardName + " " + size + " " + range + " "
-			 + firepower + " " + cargo;
+		return cardName + " " + size + " " + speed + " " +  range 
+				+ " " + firepower + " " + cargo;
 	}
 	
 	public String toString(int cat) {

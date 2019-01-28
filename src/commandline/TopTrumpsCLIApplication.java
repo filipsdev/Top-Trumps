@@ -27,9 +27,9 @@ public class TopTrumpsCLIApplication  {
 		boolean userWantsToQuit = false; // flag to check whether the user wants to quit the application
 		
 		boolean writeGameLogsToFile = true; // Should we write game logs to file?
-//		if (args[0].equalsIgnoreCase("true")) {
-//			writeGameLogsToFile=true; // Command line selection
-//		}
+		if (args[0].equalsIgnoreCase("true")) {
+			writeGameLogsToFile=true; // Command line selection
+		}
 		
 		while(!userWantsToQuit) {
 		System.out.println("Do you want to see past results or play a game?\n"
