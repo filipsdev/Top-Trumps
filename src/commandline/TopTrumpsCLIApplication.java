@@ -39,11 +39,8 @@ public class TopTrumpsCLIApplication  {
 		
 		boolean userWantsToQuit = false; // flag to check whether the user wants to quit the application
 		
-<<<<<<< HEAD
-		boolean writeGameLogsToFile = true; // Should we write game logs to file?
-=======
 		boolean writeGameLogsToFile = false; // Should we write game logs to file?
->>>>>>> 9eb3d6af6f782f68521124b4a7d3bbfbcaec66ed
+
 		if (args[0].equalsIgnoreCase("true")) {
 			writeGameLogsToFile=true; // Command line selection
 		}
